@@ -7,7 +7,7 @@ export class UserController {
 
   @Get('/checkLogin')
   checkLogin(@Query() query: any) {
-    let userId: string = String(query.userId);
+    const userId: string = String(query.userId);
     return this.userService.checkLogin(userId);
   }
 

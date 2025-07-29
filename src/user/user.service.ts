@@ -17,24 +17,24 @@ export class UserService {
         resultJson = {
           userId: userId,
           username: 'sqlhz',
-          roles: ['admin', 'teacher']
-        }
-      break;
+          roles: ['admin', 'teacher'],
+        };
+        break;
       case '114514aa':
         resultJson = {
           userId: userId,
           username: 'hmk',
           class: '20j1',
-          roles: ['student']
-        }
-      break;
+          roles: ['student'],
+        };
+        break;
       case '114514aaa':
         resultJson = {
           userId: userId,
           username: 'clhz',
-          roles: ['teacher']
-        }
-      break;
+          roles: ['teacher'],
+        };
+        break;
       default:
         break;
     }
@@ -42,7 +42,7 @@ export class UserService {
       code: HttpStatus.OK,
       data: resultJson,
       msg: '获取成功',
-    }
+    };
   }
 
   loginActions() {
@@ -54,6 +54,6 @@ export class UserService {
         roles: ['teacher'],
       },
       msg: '登录成功',
-    }
+    };
   }
 }
